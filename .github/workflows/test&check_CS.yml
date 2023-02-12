@@ -28,7 +28,7 @@ jobs:
     - name: Build assets
       run: npm i && npm run build
     - name: Run phpcs
-      run: phpcs -q --report=checkstyle src | cs2pr
+      run: phpcs -q --report=checkstyle app | cs2pr
     - name: Create Database
       run: |
         mkdir -p database
